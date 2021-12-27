@@ -14,7 +14,7 @@ export default function Routes () {
       <Stack.Navigator
       screenOptions={{
         headerShown: true,
-        cardStyle: {backgroundColor: '#313746'}
+        cardStyle: {backgroundColor: '#313746'},
       }}
       initialRouteName="Catalog"
       >
