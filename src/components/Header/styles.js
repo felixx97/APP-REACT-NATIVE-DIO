@@ -4,5 +4,5 @@ export const Container = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-top: 10px;
+  padding: 10px 0 0 130px;
 `;

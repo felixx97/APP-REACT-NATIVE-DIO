@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import { View } from "react-native";
 import FeatherIcon from 'react-native-vector-icons/Feather'
 
-import { 
+import formatValue from '../../utils/formatValue'
+
+import {
   Container,
   ProductContainer,
   ProductList,
@@ -27,7 +29,7 @@ export default function App(){
   return (
     <Container>
       <ProductContainer>
-        <ProductList 
+        <ProductList
           data={Products}
           keyExtractor={(item) => item.id}
           ListFooterComponent={<View />}
@@ -39,7 +41,7 @@ export default function App(){
               <ProductImage source = {{uri: item.image_url}} />
               <ProductTitle>{item.title}</ProductTitle>
               <PriceContainer>
-                <ProductPrice>{item.price}</ProductPrice>
+                <ProductPrice>{formatValue(item.price)}</ProductPrice>
                 <ProductButton onPress={() => {}}>
                   <ProductButtonText>Adicionar</ProductButtonText>
                   <FeatherIcon size={30} name="plus-circle" color='#d1d7e9' />
