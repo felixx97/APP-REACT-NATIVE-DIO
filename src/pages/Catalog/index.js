@@ -20,27 +20,14 @@ import {
 
 
 export default function App(){
-  const [Products, setProducts] = useState([{
+  const [Products, setProducts] = useState([
+    {
     id: '1',
     title: 'Assinatura Trimestral',
     image_url:
     'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/quarterly_subscription_yjolpc.png',
     price: 150,
-  },
-  {
-    id: '2',
-    title: 'Assinatura Trimestral',
-    image_url:
-    'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/quarterly_subscription_yjolpc.png',
-    price: 150,
-  },
-  {
-    id: '3',
-    title: 'Assinatura Trimestral',
-    image_url:
-    'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/quarterly_subscription_yjolpc.png',
-    price: 150,
-  },
+    }
   ]);
   return (
     <Container>
